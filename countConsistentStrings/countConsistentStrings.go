@@ -1,3 +1,7 @@
+// https://leetcode.com/problems/count-the-number-of-consistent-strings/
+// Given a string of allowed distinct characters and an array of strings words.
+// A string is consistent if all characters in the string appear in the string allowed.
+// Returns the number of consistent strings in the array words.
 package countConsistentStrings
 
 func CountConsistentStrings(allowed string, words []string) int {
