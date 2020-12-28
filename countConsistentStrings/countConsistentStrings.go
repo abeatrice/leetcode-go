@@ -24,7 +24,7 @@ func wordIsValid(allowed, word string) bool {
 				break
 			}
 		}
-		if found != true {
+		if !found {
 			return false
 		}
 	}
