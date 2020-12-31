@@ -1,9 +1,9 @@
-package maximumWealth_test
+package maximumwealth_test
 
 import (
 	"testing"
 
-	"github.com/abeatrice/leetcode-go/maximumWealth"
+	maximumwealth "github.com/abeatrice/leetcode-go/maximumWealth"
 )
 
 type testItem struct {
@@ -18,7 +18,7 @@ func TestMaximumWealth(t *testing.T) {
 		{accounts: [][]int{{2, 8, 7}, {7, 1, 3}, {1, 9, 5}}, expected: 17},
 	}
 	for _, testItem := range testItems {
-		result := maximumWealth.MaximumWealth(testItem.accounts)
+		result := maximumwealth.MaximumWealth(testItem.accounts)
 		if result != testItem.expected {
 			t.Errorf("MaximumWealth(%v) Expected: %v, Result: %v", testItem.accounts, testItem.expected, result)
 		}
